@@ -14,21 +14,21 @@ public class DecimalCollectionTest {
     @Before
     public void before() {
         c = new DecimalCollection();
-        c.add(3);
-        c.add(2);
+        c.add(3.23);
+        c.add(2.45);
+        c.add(-10.67);
     }
 
     @Test
     public void testSum() {
-        assertEquals(5, c.sum(), 0);
+        assertEquals(-4.99, c.sum(), 10e-5);
     }
     
-    public void testSize(){
-        assertEquals(2, c.size());
+    public void testSize(){         assertEquals(3, c.size());
     }
 
     public void testHigher() {
-        assertEquals(3, c.higher(), 0);
+        assertEquals(3.23, c.higher(),10e-5);
     }
 
     
