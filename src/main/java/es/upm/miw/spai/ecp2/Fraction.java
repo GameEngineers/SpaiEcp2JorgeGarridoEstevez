@@ -1,4 +1,4 @@
-package es.upm.miw.iwvg.junit;
+package es.upm.miw.spai.ecp2;
 
 
 /**
