@@ -1,6 +1,5 @@
 package es.upm.miw.spai.ecp2;
 
-
 /**
  * Conceptos: Las fracciones propias son aquellas cuyo numerador es menor que el
  * denominador
@@ -36,30 +35,34 @@ package es.upm.miw.spai.ecp2;
  * 
  */
 public class Fraction {
-    
-    private int numerator;
 
-    private int denominator;
+	private int numerator;
 
-    public Fraction(int numerator, int denominator) {
-        this.numerator = numerator;
-        this.denominator = denominator;
-    }
+	private int denominator;
 
-    public Fraction() {
-        this(1, 1);
-    }
+	public Fraction(int numerator, int denominator) {
+		this.numerator = numerator;
+		this.denominator = denominator;
+	}
 
-    public double decimal() {
-        return (double) numerator / denominator;
-    }
-    
-    public int getNumerator() {
-        return numerator;
-    }
+	public Fraction() {
+		this(1, 1);
+	}
 
-    public int getDenominator() {
-        return denominator;
-    }
-    
+	public double decimal() {
+		return (double) numerator / denominator;
+	}
+
+	public int getNumerator() {
+		return numerator;
+	}
+
+	public int getDenominator() {
+		return denominator;
+	}
+
+	public Fraction divide(Fraction operand) {
+		return (new Fraction((this.numerator * operand.numerator), (this.denominator * operand.denominator)));
+	}
+
 }
