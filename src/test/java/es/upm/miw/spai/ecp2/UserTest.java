@@ -40,5 +40,10 @@ public class UserTest {
     public void testGetFamilyName(){
         assertEquals("Garrido", u.getFamilyName());
     }
+    
+    @Test
+    public void testAbbrFullName(){
+        assertEquals("J. Garrido", u.AbbrFullName());
+    }
    
 }

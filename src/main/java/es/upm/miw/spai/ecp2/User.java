@@ -39,5 +39,10 @@ public class User {
     public String getFamilyName() {
         return this.familyName;
     }
+    
+    public String AbbrFullName(){
+		return (this.initials() + " " + this.familyName);
+    	
+    }
 
 }
