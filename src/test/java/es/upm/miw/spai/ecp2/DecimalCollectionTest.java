@@ -31,5 +31,8 @@ public class DecimalCollectionTest {
         assertEquals(3.23, c.higher(),10e-5);
     }
 
+    public void testAvg() {
+        assertEquals(-1.663333333, c.avg(), 10e-5);
+    }
     
 }
