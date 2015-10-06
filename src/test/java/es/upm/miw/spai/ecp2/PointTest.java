@@ -51,5 +51,12 @@ public class PointTest {
         assertEquals(7, pt.getX());
         assertEquals(9, pt.getY());
     }
-
+ 
+    @Test
+    public void sumTest() {
+        Point point2= new Point(2,1);
+        Point sumPoint = pt.sum(point2);
+        assertEquals(4, sumPoint.getX());
+        assertEquals(4, sumPoint.getY());
+    }
 }

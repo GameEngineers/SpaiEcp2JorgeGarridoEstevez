@@ -49,4 +49,8 @@ public class Point {
         this.y = y;
     }
     
+    public Point sum(Point operand){
+        return new Point(this.getX()+operand.getX(), this.getY()+operand.getY());
+    }
+    
 }
