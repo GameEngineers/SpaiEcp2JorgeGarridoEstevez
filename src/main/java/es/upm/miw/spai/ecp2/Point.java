@@ -44,4 +44,9 @@ public class Point {
         return "Point[" + x + "," + y + "]";
     }
     
+    public void ModifyPoint(int x, int y){
+        this.x = x;
+        this.y = y;
+    }
+    
 }

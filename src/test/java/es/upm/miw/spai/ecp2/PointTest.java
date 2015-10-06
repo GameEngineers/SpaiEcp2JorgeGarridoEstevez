@@ -44,5 +44,12 @@ public class PointTest {
         assertEquals(1, pt.getX());
         assertEquals(2, pt.getY());
     }
+    
+    @Test
+    public void testModifyPoint() {
+        pt.ModifyPoint(7, 9);
+        assertEquals(7, pt.getX());
+        assertEquals(9, pt.getY());
+    }
 
 }
