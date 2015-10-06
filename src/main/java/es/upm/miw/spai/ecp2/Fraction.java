@@ -64,5 +64,10 @@ public class Fraction {
 	public Fraction divide(Fraction operand) {
 		return (new Fraction((this.numerator * operand.numerator), (this.denominator * operand.denominator)));
 	}
+	
+	public Fraction multiply(Fraction operand) {
+	    return new Fraction (this.numerator * operand.getNumerator(),
+	                         this.denominator * operand.getDenominator());
+	}
 
 }

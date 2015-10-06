@@ -36,5 +36,11 @@ public class FractionTest {
 		Fraction fr = f.divide(new Fraction(1, 2));
 		assertEquals(0.25, fr.decimal(),0);
 	}
+	
+	@Test
+    public void testMultiply() {
+        Fraction fraction = f.multiply(new Fraction (8, 1));
+        assertEquals(4, fraction.decimal(), 10e-5);
+    }
 
 }
