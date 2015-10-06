@@ -42,5 +42,12 @@ public class FractionTest {
         Fraction fraction = f.multiply(new Fraction (8, 1));
         assertEquals(4, fraction.decimal(), 10e-5);
     }
+	
+    @Test
+    public void testInvert() {
+        Fraction fraction = f.invert();
+        assertEquals(2, fraction.getNumerator());
+        assertEquals(1, fraction.getDenominator());
+    }	
 
 }

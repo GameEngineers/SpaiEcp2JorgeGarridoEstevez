@@ -69,5 +69,10 @@ public class Fraction {
 	    return new Fraction (this.numerator * operand.getNumerator(),
 	                         this.denominator * operand.getDenominator());
 	}
+	
+    public Fraction invert(){
+        Fraction invertFraction = new Fraction (this.getDenominator(), this.getNumerator());
+        return invertFraction;   
+    }
 
 }
