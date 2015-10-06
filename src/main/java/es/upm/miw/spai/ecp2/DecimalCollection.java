@@ -45,5 +45,9 @@ public class DecimalCollection {
         }
         return amount / this.size();
     }
+    
+    public void clear() {
+        this.collection.clear();;
+    }
 
 }

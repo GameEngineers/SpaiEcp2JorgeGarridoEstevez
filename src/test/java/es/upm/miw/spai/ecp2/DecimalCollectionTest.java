@@ -35,4 +35,9 @@ public class DecimalCollectionTest {
         assertEquals(-1.663333333, c.avg(), 10e-5);
     }
     
+    public void testClear() {
+        c.clear();
+        assertEquals(0, c.size());
+    }
+    
 }
