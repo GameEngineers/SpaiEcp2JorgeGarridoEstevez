@@ -33,7 +33,8 @@ public class FractionTest {
 
 	@Test
 	public void testDivide() {
-		assert(new Fraction(1, 4).equals(f.divide(new Fraction(1, 2))));
+		Fraction fr = f.divide(new Fraction(1, 2));
+		assertEquals(0.25, fr.decimal(),0);
 	}
 
 }
