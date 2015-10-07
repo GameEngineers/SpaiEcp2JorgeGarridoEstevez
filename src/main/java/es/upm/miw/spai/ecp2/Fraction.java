@@ -62,7 +62,7 @@ public class Fraction {
 	}
 
 	public Fraction divide(Fraction operand) {
-		return (new Fraction((this.numerator * operand.numerator), (this.denominator * operand.denominator)));
+		return (new Fraction((this.numerator * operand.denominator), (this.denominator * operand.numerator)));
 	}
 
 }
